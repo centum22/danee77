@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="showcase">
+<header>
+    <h2 class="logo">potrfolio</h2>
+    <div class="toggle"></div>
+</header>
+
+<video src="imges/인트로.mp4" muted loop autoplay></video>
+<div class="overly"></div>
+
+<!-- <div class="text">
+<h2>2022</h2>
+<h3>Portfolio</h3>
+<p>MOON DA EUN</p>
+    <a href="#">Explore</a>
+    </div> -->
+    
+    <ul class="social">
+        <li><a href="#"><img src="imges/f.png" alt=""></a></li>
+        <li><a href="#"><img src="imges/i.png" alt=""></a></li>
+        <li><a href="#"><img src="imges/t.png" alt=""></a></li>
+    </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="personal porfolio/index.html">About Me</a></li>
+            <li><a href="graphic/index.html">Graphic Design </a></li>
+            <li><a href="videodesign/index.html">Video </a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
+        </ul>
+    </div>
+    
+    <script>
+        const menuToggle=document.querySelector('.toggle');
+        const showcase=document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click',() => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+            })
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nato Sans';
+}
+
+.hero{
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(imgs/back-image2-01.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 10px 10%;
+        position: relative;
+        overflow: hidden;
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo{
+    width: 157px;
+    height: 40px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;/*옆으로 정렬*/
+    margin: 10px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+
+}
+
+.login-btn{
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(45deg, #f2a807, #f5c866); /*그라디언트*/
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;/*위쪽오른쪽 둥글게 하는거 */
+    transition: 0.5s;
+}
+
+
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+
+} 
+
+
+.content h1{
+    /* margin-top: 10%; */
+    font-size: 50px;
+    color:rgb(59, 54, 41);
+}
+
+
+.content p{
+    margin: 10px 0 30px; 
+    color:#333;
+    animation-delay:0.5s;
+}
+
+.content .btn{
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+
+.feature-img{
+    width: 530px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    
+}
+
+.feature-img.anim{ /*공백주면 안됨,*/
+    animation-delay: 1.5s;
+
+}
+
+.anim{
+    font-weight: 300;
+    opacity: 0;
+    transform:translateY(30px);
+    animation: moveup 0.5s linear forwards;
+
+}
+
+
+.h1{ 
+    font-weight: 500;
+    
+}
+
+
+.info{
+    position: relative;
+    left: 20px;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

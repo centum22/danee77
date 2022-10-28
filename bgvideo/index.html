@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG_VIDEO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <video autoplay Loop muted plays-inline id="backVideo">
+            <source src="img/video.mp4" type="video/mp4">
+        </video>
+        <a href="../index.html"><img src="img/hamburger.png" class="menu_icon"alt="toggle"></a>
+        <div class="sidebar">
+            <div class="top_links">
+            <img src="img/arrow.png" class="arrow_icon" alt="arrow">
+            <div>
+                <img src="img/audio.png" alt="audio">
+                <img src="img/link.png" alt="link">
+            </div>
+        </div>
+            <h1>Elliana Katherine</h1>
+            <h3>Washington, USA</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolore accusamus, odio sunt soluta
+                delectus nam dolorem fuga nostrum ex veritatis omnis molestias temporibus porro animi et illum incidunt
+                rerum!</p>
+                <a href="#">More Details</a>
+            </div>
+        <img src="img/play.png" id="btn" alt="play">
+    </div>
+    <script>
+        let backVideo = document.getElementById("backVideo");
+        let btn = document.getElementById("btn");
+
+        btn.onclick = function(){
+            backVideo.style.display="block";
+            if(backVideo.paused){
+                backVideo.play();
+                btn.src="img/pause.png";
+            }
+            else{
+                backVideo.pause();
+            btn.src="img/play.png";
+        }
+    }
+    </script>
+</body>
+
+</html>
